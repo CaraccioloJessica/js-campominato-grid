@@ -19,7 +19,7 @@ for (let i = 0; i < 100; i++){
       // IN CONSOLE VISUALIZZO NUMERO CLICCATO
       console.log('Hai cliccato la cella:', i + 1);
     }
-  )
+    )
 
   // METTO L'ELEMENTO NEL CONTAINER
   contenitore.appendChild(nuovoElemento);
