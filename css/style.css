@@ -17,15 +17,14 @@ h1{
 #container{
   display: flex;
   flex-wrap: wrap;
-  width: 70%;
-  margin: 0 auto;
-  height: 100vh;
+  max-width: 700px;
+  margin: 50px auto;
 }
 
 .square{
   color: #795548;
   border: 1px solid #795548;
-  height: 50px;
+  height: 60px;
   width: calc(100% / 10);
 }
 

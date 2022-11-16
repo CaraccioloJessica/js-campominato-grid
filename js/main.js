@@ -6,7 +6,8 @@ const contenitore = document.getElementById('container');
 
 // LOOP PER CREARE 100 CASELLE
 for (let i = 0; i < 100; i++){
-  creaSquare();
+  let nuovoElemento = creaSquare();
+  contenitore.appendChild(nuovoElemento);
 }
 
 
@@ -15,5 +16,6 @@ function creaSquare() {
   const elemento = document.createElement('div');
   elemento.classList.add('square');
 
-  console.log(elemento);
+  // console.log(elemento);
+  return elemento;
 }
