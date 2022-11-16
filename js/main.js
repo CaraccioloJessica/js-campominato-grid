@@ -7,6 +7,7 @@ const contenitore = document.getElementById('container');
 // LOOP PER CREARE 100 CASELLE
 for (let i = 0; i < 100; i++){
   let nuovoElemento = creaSquare();
+  nuovoElemento.append([i + 1]);
 
   // AL CLICK AGGIUNGO CLASSE PER CAMBIARE COLORE ALLA CASELLA
   nuovoElemento.addEventListener('click',
