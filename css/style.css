@@ -1,0 +1,34 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7d8ba;
+}
+
+h1{
+  text-align: center;
+  color: #8ECC39;
+}
+
+#container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.square{
+  color: #795548;
+  border: 1px solid #795548;
+  height: 50px;
+  width: calc(100% / 10);
+}
+
+.square-click{
+  background-color: #4AC0FD;
+}
