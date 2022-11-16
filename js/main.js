@@ -11,6 +11,8 @@ button.addEventListener('click',
   function () {
     // RESET DELLA GRIGLIA AL CLICK
     contenitore.innerHTML = '';
+    // RESET CONSOLE QUANDO SI GENERA NUOVA GRIGLIA
+    console.clear();
 
     // LOOP PER CREARE 100 CELLE
     for (let i = 0; i < 100; i++){
