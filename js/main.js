@@ -9,6 +9,9 @@ const button = document.getElementById('btn');
 
 button.addEventListener('click',
   function () {
+    // RESET DELLA GRIGLIA AL CLICK
+    contenitore.innerHTML = '';
+
     // LOOP PER CREARE 100 CELLE
     for (let i = 0; i < 100; i++){
       let nuovoElemento = creaSquare();
