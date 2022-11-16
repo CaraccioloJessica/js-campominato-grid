@@ -6,16 +6,17 @@ const contenitore = document.getElementById('container');
 
 // BOTTONE PER GENERARE GRIGLIA
 const button = document.getElementById('btn');
+
 button.addEventListener('click',
   function () {
-    // LOOP PER CREARE 100 CASELLE
+    // LOOP PER CREARE 100 CELLE
     for (let i = 0; i < 100; i++){
       let nuovoElemento = creaSquare();
 
-      // NUMERI DA 1 A 100 DENTRO CASELLE
+      // NUMERI DA 1 A 100 DENTRO CELLE
       nuovoElemento.append([i + 1]);
 
-      // AL CLICK AGGIUNGO CLASSE PER CAMBIARE COLORE ALLA CASELLA
+      // AL CLICK AGGIUNGO CLASSE PER CAMBIARE COLORE ALLA CELLA
       nuovoElemento.addEventListener('click',
         function () {
           nuovoElemento.classList.toggle('square-click');
