@@ -24,7 +24,7 @@ button.addEventListener('click',
       // AL CLICK AGGIUNGO CLASSE PER CAMBIARE COLORE ALLA CELLA
       nuovoElemento.addEventListener('click',
         function () {
-          nuovoElemento.classList.toggle('square-click');
+          nuovoElemento.classList.add('square-click');
 
           // IN CONSOLE VISUALIZZO NUMERO CLICCATO
           console.log('Hai cliccato la cella:', i + 1);
