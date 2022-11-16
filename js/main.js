@@ -4,27 +4,32 @@
 const contenitore = document.getElementById('container');
 // console.log(contenitore);
 
-// LOOP PER CREARE 100 CASELLE
-for (let i = 0; i < 100; i++){
-  let nuovoElemento = creaSquare();
+// BOTTONE PER GENERARE GRIGLIA
+const button = document.getElementById('btn');
+button.addEventListener('click',
+  function () {
+    // LOOP PER CREARE 100 CASELLE
+    for (let i = 0; i < 100; i++){
+      let nuovoElemento = creaSquare();
 
-  // NUMERI DA 1 A 100 DENTRO CASELLE
-  nuovoElemento.append([i + 1]);
+      // NUMERI DA 1 A 100 DENTRO CASELLE
+      nuovoElemento.append([i + 1]);
 
-  // AL CLICK AGGIUNGO CLASSE PER CAMBIARE COLORE ALLA CASELLA
-  nuovoElemento.addEventListener('click',
-    function () {
-      nuovoElemento.classList.toggle('square-click');
+      // AL CLICK AGGIUNGO CLASSE PER CAMBIARE COLORE ALLA CASELLA
+      nuovoElemento.addEventListener('click',
+        function () {
+          nuovoElemento.classList.toggle('square-click');
 
-      // IN CONSOLE VISUALIZZO NUMERO CLICCATO
-      console.log('Hai cliccato la cella:', i + 1);
+          // IN CONSOLE VISUALIZZO NUMERO CLICCATO
+          console.log('Hai cliccato la cella:', i + 1);
+        }
+      )
+
+      // METTO L'ELEMENTO NEL CONTAINER
+      contenitore.appendChild(nuovoElemento);
     }
-    )
-
-  // METTO L'ELEMENTO NEL CONTAINER
-  contenitore.appendChild(nuovoElemento);
-}
-
+  }
+)
 
 // FUNZIONE PER CREARE DIV
 function creaSquare() {
